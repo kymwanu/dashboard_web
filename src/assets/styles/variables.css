@@ -1,0 +1,26 @@
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #cccccc;
+  --font-size-small: 12px;
+  --font-size-medium: 16px;
+  --font-size-large: 20px;
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 24px;
+}
+
+.dark-theme {
+  --background-color: #2c3e50;
+  --text-color: #ecf0f1;
+  --border-color: #34495e;
+}
+
+.light-theme {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --border-color: #cccccc;
+}
