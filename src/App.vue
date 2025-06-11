@@ -1,19 +1,13 @@
 <template>
   <div id="app" :class="theme">
-    <!-- <ThemeToggle @toggleTheme="toggleTheme" /> -->
     <router-view />
   </div>
 </template>
 
 <script setup>
 import { ref } from 'vue'
-/* import ThemeToggle from './components/ThemeToggle.vue'
- */
-const theme = ref('light')
 
-/* const toggleTheme = () => {
-  theme.value = theme.value === 'light' ? 'dark' : 'light'
-} */
+const theme = ref('light')
 </script>
 
 <style>
@@ -26,6 +20,5 @@ const theme = ref('light')
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  /*  margin-top: 60px; */
 }
 </style>

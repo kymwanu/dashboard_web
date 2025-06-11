@@ -1,12 +1,11 @@
 <template>
   <div class="dashboard-layout">
-    <!-- Botão hambúrguer para mobile -->
     <button class="hamburger" @click="showSidebar = !showSidebar">
       <span></span>
       <span></span>
       <span></span>
     </button>
-    <!-- Overlay para fechar o menu ao clicar fora -->
+
     <div v-if="showSidebar" class="sidebar-overlay" @click="showSidebar = false"></div>
     <aside class="sidebar" :class="{ open: showSidebar }">
       <div class="logo">Pagamentos</div>
@@ -218,7 +217,6 @@ const detailedPaymentChartOptions = {
   },
 }
 
-// Impede scroll do body quando o menu está aberto no mobile
 watch(showSidebar, (val) => {
   if (val) {
     document.body.style.overflow = 'hidden'
@@ -786,18 +784,18 @@ body.dark-theme .graph-img {
   background: #23272f;
 }
 .transaction-history.card {
-  max-width: 340px; /* Limita a largura máxima do card */
-  min-width: 220px; /* Opcional: define uma largura mínima */
-  flex: 1 1 220px; /* Permite encolher mais */
-  padding: 24px 18px; /* Reduz o padding interno */
+  max-width: 340px;
+  min-width: 220px;
+  flex: 1 1 220px;
+  padding: 24px 18px;
 }
 .metric-card.positive {
-  border-left: 3px solid #22c55e; /* Verde para ganhos */
+  border-left: 3px solid #22c55e;
   border: solid #22c55e;
 }
 
 .metric-card.negative {
-  border-left: 3px solid #ef4444; /* Vermelho para perdas */
+  border-left: 3px solid #ef4444;
   border: solid #ef4444;
 }
 </style>
